@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dealership</title>
+    <link rel="icon" href="./assets/mainlogo-white.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="load.js"></script>
+</head>
+<body>
+    
+    <div class="nav-bar" data-aos="fade-down">
+        <div class="logo">
+            <img src="./assets/mainlogo-white.png" alt="logo">
+        </div>
+        <div class="nav" id="nav">
+            <a href="index.html"><span>Home</span></a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="location.html">Location</a>
+            <a href="shop.html">Shop</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <div class="body-main">
+        <!-- side bar -->
+        <div class="side-bar" data-aos="fade-right" data-aos-duration="1000">
+            <a href="index.html"><br><br><span>Home</span></a><br><br><br>
+            <a href="about.html">About</a><br><br><br>
+            <a href="contact.html">Contact</a><br><br><br>
+            <a href="location.html">Location</a><br><br><br>
+            <a href="shop.html">Shop</a>
+        </div>
+
+        <!-- main content -->
+        <div class="main-content">
+            <div class="zero">
+                <h1 class="intro" data-aos="flip-left" data-aos-duration="1000">Want to start rallying?</h1>
+            </div>
+
+            <div class="cars one">
+                <h1 class="name" data-aos="fade-left" data-aos-duration="500">22B Impreza</h1>
+                <p data-aos="fade-left" data-aos-duration="200">Only 424 were made to celebrate Subaru’s 40th anniversary, as well as its third consecutive year of winning the WRC championship. It was kind of like the Type R STI, but improved in all the important areas. The original car used the 2.0-litre Boxer engine like that in the rally car, but for the 22B it was bored out to 2.2-litres. It also got other improvements, such as nozzles to spray water into the intercooler when driving hard. </p>
+            </div>
+            <div class="cars two">
+                <h1 class="name" data-aos="fade-left" data-aos-duration="500">Evolution VI</h1>
+                <p data-aos="fade-left" data-aos-duration="200">MITSUBISHI MOTORS developed the LANCER EVOLUTION VI, which has evolved further, and simultaneously debuted their production vehicle and the Group A rally car. The basic specifications followed in the footstep of the LANCER EVOLUTION V, but the biggest difference was in its aerodynamic package. Based on the requirements needed for the rally car, the LANCER EVOLUTION VI adopted a two-stage rear wing installed on the standard version to start with. </p>
+            </div>
+
+            <div class="cars three">
+                <h1 class="name" data-aos="fade-left" data-aos-duration="500">Celica GT-Four</h1>
+                <p data-aos="fade-left" data-aos-duration="200">The Toyota Celica GT-Four is a high performance model of the Celica Liftback that was produced from 1986 to 1999, with a turbocharged 3S-GTE engine, and full-time AWD. It was created to compete in the World Rally Championship, whose regulations dictate that a manufacturer must build road-going versions of the vehicle in sufficient numbers.</p>
+            </div>
+
+            <div class="cars four">
+                <h1 class="name" data-aos="fade-left" data-aos-duration="500">Delta Integrale</h1>
+                <p data-aos="fade-left" data-aos-duration="200">The Lancia Delta HF is a Group A rally car built for the Martini Lancia by Lancia to compete in the World Rally Championship. It is based upon the Lancia Delta road car and replaced the Lancia Delta S4. The car was introduced for the 1987 World Rally Championship season and dominated the World Rally Championship, scoring 46 WRC victories overall and winning the constructors' championship a record six times in a row from 1987 to 1992</p>
+            </div>
+
+            <div class="cars five">
+                <h1 class="name" data-aos="fade-left" data-aos-duration="500">Quattro</h1>
+                <p data-aos="fade-left" data-aos-duration="200">The Audi Quattro was the first rally car to take advantage of the then-recently changed rules that allowed the use of four-wheel drive in competition racing. It won consecutive competitions for the next two years.[4] To commemorate the success of the original vehicle, all subsequent Audi production automobiles with this four-wheel-drive system were badged with the trademark quattro with a lower case "q" letter.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        
+        <div class="footer-wrapper">
+            <div class="links">
+                <a href="index.html">Home</a>
+            <a href="about.html"><span>About</span></a>
+            <a href="contact.html">Contact</a>
+            <a href="location.html">Location</a>
+            <a href="shop.html">Shop</a>
+            </div>
+            <div class="lazy footer-logo">
+                <img data-src="./assets/mainlogo-white.png" alt="logo" class="lazy-image"></div>
+            <div ><h1 class="owner">Mariño, Carl Jerome N.</h1></div>
+            <div class="email"><p>marinojerome2@gmail.com</p></div>
+        </div>
+    </div>
+
+   
+
+    <script>
+        function toggleNav() {
+            var nav = document.getElementById("nav");
+            nav.classList.toggle("active");
+
+        }
+        AOS.init();
+
+    </script>
+</body>
+</html>

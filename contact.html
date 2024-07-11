@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dealership</title>
+    <link rel="icon" href="./assets/mainlogo-white.png" type="image/x-icon" class="lazy"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/contact.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/a74d60f356.js" crossorigin="anonymous"></script>
+    <script src="load.js"></script>
+
+    
+</head>
+<body>
+    
+    <div class="nav-bar" data-aos="fade-down">
+        <div class="logo">
+            <img data-src="./assets/mainlogo-white.png" alt="logo" class="lazy-image">
+        </div>
+        <div class="nav" id="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html"><span>Contact</span></a>
+            <a href="location.html">Location</a>
+            <a href="shop.html">Shop</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <div class="body-main">
+        <!-- side bar -->
+        <div class="side-bar" data-aos="fade-right" data-aos-duration="1000">
+            <a href="index.html"><br><br>Home</a><br><br><br>
+            <a href="about.html">About</a><br><br><br>
+            <a href="contact.html"><span>Contact</span></a><br><br><br>
+            <a href="#">Location</a><br><br><br>
+            <a href="#">Shop</a>
+        </div>
+
+        <!-- main content -->
+        <div class="main-content">
+            <div class="background zero">
+                <h1 class="intro" data-aos="flip-left" data-aos-duration="1000">Contact Us</h1>
+            </div>
+            <div class="accs">
+                <div class="box-container">
+                    <div class="box">Instagram
+                       <a href="https://www.instagram.com/carlmarinyo/" target="_blank"><i class="fa-brands fa-instagram"></i></a> 
+                    </div>
+                    <div class="box">Facebook
+                        <a href="https://www.facebook.com/carljerome.marino/">   <i class="fa-brands fa-square-facebook"></i></a>
+                     
+                    </div>
+                    <div class="box">Twitter
+                        <a href="https://x.com/carlmarinyo"><i class="fa-brands fa-x-twitter"></i></a>
+                    
+                    </div>
+
+                </div>
+
+
+
+                <div class="email-container">
+                    <i class="fa-solid fa-envelope"></i><h2></h2>
+                    <form action="https://formsubmit.co/202310125@fit.edu.ph" method="POST" />
+                            <div>
+                                <label for="email"><h3>Your Email</h3></label>
+
+                                <input type="email" id="email" name="email">
+                            </div>
+                            <div>
+                                <label for="message"><h3>Message</h3></label>
+                                <textarea id="message" name="message"></textarea>
+                            </div>
+                            <div>
+                                <button type="submit">Submit</button>
+                            </div>
+                        </form>
+                    
+                    
+                    
+    
+                </div>
+             
+                
+        
+
+
+
+
+
+        </div>
+    
+        
+    
+        </div>
+ 
+
+    <div class="footer">
+        
+        <div class="footer-wrapper">
+            <div class="links">
+                <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="#"><span>Contact</span></a>
+            <a href="#">Location</a>
+            <a href="#">Shop</a>
+            </div>
+            <div class="lazy footer-logo">
+                <img data-src="./assets/mainlogo-white.png" alt="logo" class="lazy-image"></div>
+            <div ><h1 class="owner">Mariño, Carl Jerome N.</h1></div>
+            <div class="email"><p>marinojerome2@gmail.com</p></div>
+        </div>
+    </div>
+
+    <script>
+        function toggleNav() {
+            var nav = document.getElementById("nav");
+            nav.classList.toggle("active");
+
+        }
+        AOS.init();
+
+    </script>
+</body>
+</html>

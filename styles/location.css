@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+    color: white;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nav-bar {
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    z-index: 1000;
+    padding: 0 20px;
+}
+
+.logo {
+    width: auto;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.logo img {
+    height: 80px;
+    width: auto;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; 
+}
+.nav a {
+    margin: 0 15px; 
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+}
+.nav-bar a.icon {
+    display: none; 
+}
+.side-bar a:hover, .nav-bar a:hover  {
+    color: #FFBD59;
+    border-bottom: 5px solid  #FFBD59;;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+}
+span {
+    color: #FFBD59;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+}
+.side-bar {
+    background-color: white;
+    width: 100px;
+    margin: 15% 1%;
+    height: 350px;
+    text-align: center;
+    position: fixed;
+    border-radius: 16px;
+    box-shadow: 1px 2px 3px 3px rgb(0, 0, 0);
+    z-index: 3;
+}
+.side-bar a {
+    font-size: 20px;
+    color: rgb(30, 48, 63);
+    font-weight: bold;
+    transition: 0.3s;
+    text-decoration: none;
+}
+.zero h1 {
+    line-height: 100vh;
+    margin: 0;
+    height: 100vh;
+    font-size: 5vw;
+    position: static;
+    text-align: center;
+    z-index: 0;
+    width: 100%;
+    color: #FFBD59;
+    text-shadow: -1px 1px 5px rgba(0,0,0,0.7);
+}
+/*  ABOVE CODE IS FIXED     */
+.zero {
+    background-color: black;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(to top,rgba(22, 22, 22, 1),rgba(22, 22, 22, 0.5),rgba(0, 0, 0,0.1), rgba(0, 0, 0, 0.09)),
+    url(../assets/location.jpg);
+}
+.maps {
+    background-color: rgb(22, 22, 22);
+    width: 100%;
+}
+.maps-container {
+    width: 60%;
+
+    margin: 0 auto;
+    padding-top: 5%;
+}
+.maps-container p {
+   
+    width: 100%;
+    text-align: center;
+    margin: 2% auto;
+}
+.maps-container iframe {
+  width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 50px;
+    border: 0;
+    padding-bottom: 20px;
+}
+
+
+/*FOOTER ONLY */
+.footer {
+    width: 100%;
+    height: 20px;
+    font-size: 15px;
+
+}
+
+.footer img {
+    padding: 0;
+    height: 100px;
+    width: auto;
+
+}
+.footer a:hover {
+    color: #FFBD59;
+}
+.footer-wrapper {
+
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: #01000a;
+}
+
+.links {
+padding: 2% 0;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+   margin: 0 auto;
+    width: 85%;
+
+
+}
+.footer-wrapper a {
+width: 100%;
+text-decoration: none;
+
+}
+@media screen and (max-width: 768px) {
+    .nav-bar {
+        height: auto; 
+        display: flex; 
+       
+        font-size: 50px;
+        background-color: rgb(22, 22, 22);
+        align-items: flex-start; 
+    }
+   
+    .nav {
+        padding-top: 100px;
+        display: none; 
+        flex-direction: column; 
+        align-items: center; 
+        width: 100%;
+        margin-top: 40px; 
+    }
+
+    .nav.active {
+        display: flex; 
+    }
+
+    .nav-bar a.icon {
+        display: block; 
+        cursor: pointer;
+        margin-top: 25px;
+    }
+    .side-bar a:hover, .nav-bar a:hover  {
+      
+        border-bottom: none;
+    }
+    .nav a {
+        margin: 10px 0; 
+        
+        width: 100%;
+        text-align: center;
+    }
+    .side-bar {
+        display: none;
+    }
+    .zero h1 {
+        font-size: 3em;
+    }
+    .maps-container iframe {
+height: 150px;
+width: 100%;
+padding: 10px;
+margin-bottom: 25px;
+      }
+      .maps-container {
+        width: 100%;
+    
+        margin: 0 auto;
+        padding-top: 5%;
+    }
+     }

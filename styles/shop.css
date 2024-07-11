@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: Yota;
+    src: url(/avenir\ lt\ std\ black.otf)
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+    color: white;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nav-bar {
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    z-index: 1000;
+    padding: 0 20px;
+}
+
+.logo {
+    width: auto;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.logo img {
+    height: 80px;
+    width: auto;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; 
+}
+.nav a {
+    margin: 0 15px; 
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+}
+.nav-bar a.icon {
+    display: none; 
+}
+.side-bar a:hover, .nav-bar a:hover  {
+    color: #FFBD59;
+    border-bottom: 5px solid  #FFBD59;;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+}
+span {
+    color: #FFBD59;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+}
+.side-bar {
+    background-color: white;
+    width: 100px;
+    margin: 15% 1%;
+    height: 350px;
+    text-align: center;
+    position: fixed;
+    border-radius: 16px;
+    box-shadow: 1px 2px 3px 3px rgb(0, 0, 0);
+    z-index: 3;
+}
+.side-bar a {
+    font-size: 20px;
+    color: rgb(30, 48, 63);
+    font-weight: bold;
+    transition: 0.3s;
+    text-decoration: none;
+}
+.zero h1 {
+    line-height: 100vh;
+    margin: 0;
+    height: 100vh;
+    font-size: 5vw;
+    position: static;
+    text-align: center;
+    z-index: 0;
+    width: 100%;
+    color: #FFBD59;
+    text-shadow: -1px 1px 5px rgba(0,0,0,0.7);
+}
+/*  ABOVE CODE IS FIXED     */
+.zero {
+    background-color: black;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(to bottom,rgb(22, 22, 22,0.8),rgba(22, 22, 22, 0.5),rgba(22, 22, 22,0.1), rgba(22, 22, 22, 0.09)),
+    url(../assets/shop.jpg);
+}
+.shop-part {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 25px;
+
+}
+.shop-part h1 {
+    color: #FFBD59;
+    text-shadow: 0px 1px 0px rgba(0,0,0,0.6);
+    font-size: 1.8rem;
+  margin: 10px auto;
+}
+.container {
+    display: grid;
+    gap: 10px;  
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    width: 80%;
+    margin: 0 auto;
+}
+
+.grid-item {
+
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+    transition: 0.5s;
+}
+.grid-item p {
+    color: black;
+    font-weight: 500;
+    margin-top: 10px;
+    font-family: Yota;
+    font-weight: 600;
+}
+.grid-item img:hover {
+    transform: scale(1.2);
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    width:5rem;
+    border-top: 2px solid #8e1c1c;
+   margin: 0 auto;
+  }
+/*FOOTER ONLY */
+.footer {
+    width: 100%;
+    height: 20px;
+    font-size: 15px;
+
+}
+
+.footer img {
+    padding: 0;
+    height: 100px;
+    width: auto;
+
+}
+.footer a:hover {
+    color: #FFBD59;
+}
+.footer-wrapper {
+
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: #01000a;
+}
+
+.links {
+padding: 2% 0;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+   margin: 0 auto;
+    width: 85%;
+
+
+}
+.footer-wrapper a {
+width: 100%;
+text-decoration: none;
+
+}
+@media screen and (max-width: 768px) {
+    .nav-bar {
+        height: auto; 
+        display: flex; 
+       
+        font-size: 50px;
+        background-color: rgb(22, 22, 22);
+        align-items: flex-start; 
+    }
+    .nav {
+        padding-top: 100px;
+        display: none; 
+        flex-direction: column; 
+        align-items: center; 
+        width: 100%;
+        margin-top: 40px; 
+    }
+
+    .nav.active {
+        display: flex; 
+    }
+
+    .nav-bar a.icon {
+        display: block; 
+        cursor: pointer;
+        margin-top: 25px;
+    }
+    .side-bar a:hover, .nav-bar a:hover  {
+      
+        border-bottom: none;
+    }
+    .nav a {
+        margin: 10px 0; 
+        
+        width: 100%;
+        text-align: center;
+    }
+    .side-bar {
+        display: none;
+    }
+    .zero h1 {
+        font-size: 3em;
+    }
+  
+     }

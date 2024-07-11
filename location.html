@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dealership</title>
+    <link rel="icon" href="./assets/mainlogo-white.png" type="image/x-icon" class="lazy"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/location.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/a74d60f356.js" crossorigin="anonymous"></script>
+    <script src="load.js"></script>
+
+    
+</head>
+<body>
+    
+    <div class="nav-bar" data-aos="fade-down">
+        <div class="logo">
+            <img data-src="./assets/mainlogo-white.png" alt="logo" class="lazy-image">
+        </div>
+        <div class="nav" id="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="location.html"><span>Location</span></a>
+            <a href="shop.html">Shop</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <div class="body-main">
+        <!-- side bar -->
+        <div class="side-bar" data-aos="fade-right" data-aos-duration="1000">
+            <a href="index.html"><br><br>Home</a><br><br><br>
+            <a href="about.html">About</a><br><br><br>
+            <a href="contact.html">Contact</a><br><br><br>
+            <a href="location.html"><span>Location</span></a><br><br><br>
+            <a href="shop.html">Shop</a>
+        </div>
+
+        <!-- main content -->
+        <div class="main-content">
+            <div class="background zero">
+                <h1 class="intro" data-aos="flip-left" data-aos-duration="1000">Find Us</h1>
+            </div>
+            <div class="maps">
+                <div class="maps-container">
+                    <p>GravelMotors is located at <span>Santa Maria, Bulacan</span></p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61707.49809506331!2d120.9868627!3d14.841041399999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ac22ac27a55f%3A0x4a8611643c5c0dd0!2sSanta%20Maria%2C%20Bulacan!5e0!3m2!1sen!2sph!4v1720568084752!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              
+            </div>
+           
+            
+    <div class="footer">
+        
+        <div class="footer-wrapper">
+            <div class="links">
+                <a href="index.html"><span>Home</span></a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="location.html">Location</a>
+            <a href="shop.html">Shop</a>
+            </div>
+            <div class="footer-logo"><img src="./assets/mainlogo-white.png" alt="logo"></div>
+            <div ><h1 class="owner">Mariño, Carl Jerome N.</h1></div>
+            <div class="email"><p>marinojerome2@gmail.com</p></div>
+        </div>
+    </div>
+    
+    <script>
+        function toggleNav() {
+            var nav = document.getElementById("nav");
+            nav.classList.toggle("active");
+
+        }
+        AOS.init();
+
+    </script>
+</body>
+</html>
